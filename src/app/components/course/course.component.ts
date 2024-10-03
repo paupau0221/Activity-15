@@ -6,14 +6,14 @@ import { Component } from '@angular/core';
   styleUrl: './course.component.css'
 })
 export class CourseComponent {
-  courseList: string[] = ["BSIT", "COMSCI", "ACOUNTANCY"];
+  courseLit: string[] = ["COMSCI", "ACCOUNTANT", "BSIT"];
   item: string = '';
 
   addItems() {
-    this.courseList.push(this.item);
+    this.courseLit.push(this.item);
   }
 
   deleteCourse(index: number) {
-    this.courseList.splice(index, 1);
+    this.courseLit.splice(index, 1);
   }
 }
